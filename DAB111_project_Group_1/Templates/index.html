@@ -1,0 +1,102 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1, shrink-to-fit=no">
+    <link href="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/css/bootstrap.min.css" rel="stylesheet">
+    <title>Home | Student Placement Details</title>
+    <style>
+        body {
+            background-color: #f8f9fa;
+            color: #495057;
+        }
+
+        header {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 20px;
+            text-align: center;
+        }
+
+        nav {
+            background-color: #212529;
+        }
+
+        nav a {
+            color: #ffffff;
+            padding: 10px;
+        }
+
+        nav a:hover {
+            background-color: #343a40;
+            border-radius: 5px;
+        }
+
+        section {
+            margin-top: 20px;
+            margin-bottom: 20px;
+        }
+
+        .placement-card {
+            border: 1px solid #dee2e6;
+            border-radius: 10px;
+            margin-bottom: 20px;
+            overflow: hidden;
+            transition: transform 0.3s;
+        }
+
+        .placement-card:hover {
+            transform: scale(1.05);
+        }
+
+        .author-name {
+            font-weight: bold;
+        }
+
+        footer {
+            background-color: #343a40;
+            color: #ffffff;
+            padding: 10px;
+            text-align: center;
+        }
+    </style>
+</head>
+<body>
+
+    <header>
+        <h1>Welcome to Student Placement Details</h1>
+    </header>
+
+    <nav class="navbar navbar-expand-lg navbar-dark">
+        <div class="container">
+            <a class="navbar-brand" href="#">Home</a>
+            <button class="navbar-toggler" type="button" data-bs-toggle="collapse" data-bs-target="#navbarNav" aria-controls="navbarNav" aria-expanded="false" aria-label="Toggle navigation">
+                <span class="navbar-toggler-icon"></span>
+            </button>
+            <div class="collapse navbar-collapse justify-content-end" id="navbarNav">
+    <ul class="navbar-nav">
+        <li class="nav-item">
+            <a class="nav-link text-light" href="/datapage">Placement Info</a>
+        </li>
+        <li class="nav-item">
+            <a class="nav-link text-light" href="/about">About</a>
+        </li>
+    </ul>
+</div>
+
+        </div>
+    </nav>
+
+    <section>
+        <img src="{{ url_for('static', filename='Student-Placement1.jpeg') }}" alt="Image Description" class="img-fluid">
+    </section>
+
+    <footer>
+        &copy; 2023 Student Placement Details
+    </footer>
+
+    <!-- Include Bootstrap JS for any additional functionality -->
+    <script src="https://cdn.jsdelivr.net/npm/bootstrap@5.3.0/dist/js/bootstrap.bundle.min.js"></script>
+
+</body>
+</html>
